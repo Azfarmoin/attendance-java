@@ -1,0 +1,247 @@
+/* ═══════════════════════════════════════════════════════════
+   AttendX Dark Theme — Global JavaFX CSS
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Root / Base ─────────────────────────────────────────── */
+.root {
+    -fx-font-family: "System";
+    -fx-font-size: 13px;
+    -fx-background-color: #08080f;
+    -fx-text-fill: #f0f0f8;
+}
+
+/* ── ScrollPane ──────────────────────────────────────────── */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+.scroll-pane .scroll-bar:vertical,
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-pref-width: 6px;
+    -fx-pref-height: 6px;
+}
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: rgba(255,255,255,0.10);
+    -fx-background-radius: 10px;
+}
+.scroll-pane .scroll-bar .thumb:hover {
+    -fx-background-color: rgba(255,255,255,0.20);
+}
+.scroll-pane .scroll-bar .track {
+    -fx-background-color: transparent;
+}
+.scroll-pane .scroll-bar .increment-button,
+.scroll-pane .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+
+/* ── ComboBox ────────────────────────────────────────────── */
+.combo-box {
+    -fx-background-color: #0a0a14;
+    -fx-border-color: rgba(255,255,255,0.07);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-text-fill: #f0f0f8;
+}
+.combo-box .list-cell {
+    -fx-background-color: #0a0a14;
+    -fx-text-fill: #f0f0f8;
+    -fx-padding: 4px 12px;
+}
+.combo-box-popup .list-view {
+    -fx-background-color: #0e0e1a;
+    -fx-border-color: rgba(255,255,255,0.08);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 20, 0, 0, 8);
+}
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #8888aa;
+    -fx-padding: 8px 14px;
+    -fx-font-size: 13px;
+}
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: rgba(255,255,255,0.05);
+    -fx-text-fill: #f0f0f8;
+}
+.combo-box-popup .list-view .list-cell:selected {
+    -fx-background-color: rgba(168,240,0,0.12);
+    -fx-text-fill: #a8f000;
+}
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+.combo-box .arrow {
+    -fx-background-color: #5a5a7a;
+}
+
+/* ── TextField / PasswordField ───────────────────────────── */
+.text-field, .password-field {
+    -fx-background-color: #0a0a14;
+    -fx-text-fill: #f0f0f8;
+    -fx-prompt-text-fill: #3d3d5a;
+    -fx-highlight-fill: rgba(96,170,255,0.3);
+    -fx-border-color: rgba(255,255,255,0.07);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 14px;
+}
+.text-field:focused, .password-field:focused {
+    -fx-border-color: rgba(96,170,255,0.5);
+    -fx-effect: dropshadow(gaussian, rgba(96,170,255,0.25), 12, 0, 0, 0);
+}
+
+/* ── Button base ─────────────────────────────────────────── */
+.button {
+    -fx-background-color: rgba(255,255,255,0.06);
+    -fx-text-fill: #8888aa;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color: rgba(255,255,255,0.10);
+    -fx-text-fill: #f0f0f8;
+}
+.button:pressed {
+    -fx-background-color: rgba(255,255,255,0.04);
+    -fx-scale-x: 0.97;
+    -fx-scale-y: 0.97;
+}
+
+/* ── DatePicker ──────────────────────────────────────────── */
+.date-picker {
+    -fx-background-color: #0a0a14;
+    -fx-border-color: rgba(255,255,255,0.07);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+.date-picker .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #f0f0f8;
+    -fx-border-color: transparent;
+}
+.date-picker .arrow-button {
+    -fx-background-color: transparent;
+}
+.date-picker .arrow-button .arrow {
+    -fx-background-color: #5a5a7a;
+}
+.date-picker-popup {
+    -fx-background-color: #0e0e1a;
+    -fx-border-color: rgba(255,255,255,0.08);
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 24, 0, 0, 10);
+}
+.date-picker-popup > * {
+    -fx-background-color: transparent;
+}
+.date-picker-popup .month-year-pane {
+    -fx-background-color: rgba(255,255,255,0.02);
+}
+.date-picker-popup .day-name-cell {
+    -fx-text-fill: #5a5a7a;
+    -fx-font-size: 11px;
+}
+.date-picker-popup .day-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #8888aa;
+}
+.date-picker-popup .day-cell:hover {
+    -fx-background-color: rgba(168,240,0,0.12);
+    -fx-text-fill: #a8f000;
+    -fx-background-radius: 8px;
+}
+.date-picker-popup .selected {
+    -fx-background-color: #a8f000;
+    -fx-text-fill: #050508;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+}
+.date-picker-popup .today {
+    -fx-border-color: #a8f000;
+    -fx-border-radius: 8px;
+}
+.date-picker-popup .spinner .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #8888aa;
+}
+
+/* ── Alert / Dialog ──────────────────────────────────────── */
+.alert .dialog-pane {
+    -fx-background-color: #0e0e1a;
+    -fx-border-color: rgba(255,255,255,0.08);
+    -fx-border-radius: 16px;
+}
+.dialog-pane {
+    -fx-background-color: #0e0e1a;
+}
+.dialog-pane .header-panel {
+    -fx-background-color: rgba(255,255,255,0.03);
+}
+.dialog-pane .button-bar .button {
+    -fx-background-color: rgba(255,255,255,0.07);
+    -fx-text-fill: #f0f0f8;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 18px;
+}
+.dialog-pane .button-bar .button:hover {
+    -fx-background-color: rgba(255,255,255,0.12);
+}
+.dialog-pane .content.label {
+    -fx-text-fill: #8888aa;
+    -fx-font-size: 13px;
+}
+
+/* ── Tooltip ─────────────────────────────────────────────── */
+.tooltip {
+    -fx-background-color: #1a1a2e;
+    -fx-text-fill: #f0f0f8;
+    -fx-border-color: rgba(255,255,255,0.08);
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-size: 12px;
+    -fx-padding: 6px 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 12, 0, 0, 4);
+}
+
+/* ── ProgressBar ─────────────────────────────────────────── */
+.progress-bar .track {
+    -fx-background-color: rgba(255,255,255,0.06);
+    -fx-background-radius: 4px;
+}
+.progress-bar .bar {
+    -fx-background-color: #a8f000;
+    -fx-background-radius: 4px;
+}
+
+/* ── Label ───────────────────────────────────────────────── */
+.label {
+    -fx-text-fill: #f0f0f8;
+}
+
+/* ── Separator ───────────────────────────────────────────── */
+.separator .line {
+    -fx-border-color: rgba(255,255,255,0.07);
+    -fx-border-width: 0.5px;
+}
+
+/* ── Chart global ────────────────────────────────────────── */
+.chart {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+.chart-content {
+    -fx-background-color: transparent;
+}
+.chart-title {
+    -fx-text-fill: #5a5a7a;
+    -fx-font-size: 12px;
+}
